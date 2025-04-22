@@ -3,7 +3,12 @@
 
 [![Release](https://img.shields.io/github/v/release/<your-username>/freak-pot)](https://github.com/<your-username>/freak-pot/releases)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  [![Issues](https://img.shields.io/github/issues/<your-username>/freak-pot)](https://github.com/<your-username>/freak-pot/issues)
 
-> A combined HTTP & FTP honeypot packaged as a single standalone binary (`Freak`). Mimics a basic web server (port 80) and an FTP server (port 21), logging all interactions for analysis.
+> "Why so serious?"
+
+Put on a crooked smile—Freak-Pot is the ultimate trickster in your network, posing as an innocent server.
+It lures unwary intruders into its twisted carnival, then captures every gasp, credential slip, and suspicious command for your devious delight.
+
+In this circus of chaos, only the bold survive—bring your curiosity, and let the madness begin.
 
 ---
 
@@ -82,28 +87,6 @@ Logs are saved in the working directory:
 
 - **HTML Response**: Place your custom `index.html` in the repo or use `set html <filename>` at runtime.
 - **Fake FTP Files**: Modify the `FAKE_FILES` list in the source before building.
-
----
-
-## 🛠️ Building from Source
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile Freak-Pot.py --name Freak
-```
-
-Your new `Freak` executable will be in the `dist/` folder.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Add new protocol honeypots (SSH, SMTP, etc.)
-- Improve logging and analytics
-- Provide Docker or Kubernetes deployments
-
-Please open issues or pull requests on GitHub.
 
 ---
 
