@@ -35,7 +35,7 @@ In this circus of chaos, only the bold survive—bring your curiosity, and let t
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/freak-pot.git
+   git clone https://github.com/J0K3R-x-Anarchy/Freak-Pot.git
    cd freak-pot
    ```
 2. **Set permissions on the binary**
