@@ -1,7 +1,6 @@
 # 🛡️ Freak-Pot Honeypot Suite
 
 
-[![Release](https://img.shields.io/github/v/release/<your-username>/freak-pot)](https://github.com/<your-username>/freak-pot/releases)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  [![Issues](https://img.shields.io/github/issues/<your-username>/freak-pot)](https://github.com/<your-username>/freak-pot/issues)
 
 > "Why so serious?"
 
@@ -12,17 +11,6 @@ In this circus of chaos, only the bold survive—bring your curiosity, and let t
 
 ---
 
-## 📖 Table of Contents
-
-- [Features](#features)
-- [Quick Start](#quick-start)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Building from Source](#building-from-source)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## 🎯 Features
 
