@@ -78,7 +78,7 @@ Logs are saved in the working directory:
 
 ---
 
-## 📜 License
+## 📜 Updates
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+More features will be added soon...
 
