@@ -1,65 +1,113 @@
-Freak-Pot Honeypot Suite
+# 🛡️ Freak-Pot Honeypot Suite
 
-Features
 
-HTTP Honeypot:
+[![Release](https://img.shields.io/github/v/release/<your-username>/freak-pot)](https://github.com/<your-username>/freak-pot/releases)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  [![Issues](https://img.shields.io/github/issues/<your-username>/freak-pot)](https://github.com/<your-username>/freak-pot/issues)
 
-Serves a customizable HTML page on port 80
+> A combined HTTP & FTP honeypot packaged as a single standalone binary (`Freak`). Mimics a basic web server (port 80) and an FTP server (port 21), logging all interactions for analysis.
 
-Logs all GET/POST requests (path, headers, payload)
+---
 
-FTP Honeypot:
+## 📖 Table of Contents
 
-Simulates an FTP server on port 21
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Building from Source](#building-from-source)
+- [Contributing](#contributing)
+- [License](#license)
 
-Captures credentials (USER / PASS)
+---
 
-Supports PASV, LIST, RETR, STOR with fake files
+## 🎯 Features
 
-Interactive Console:
+- **HTTP Honeypot**
+  - Serves a customizable HTML page on port 80
+  - Logs all GET/POST requests (path, headers, payload)
+- **FTP Honeypot**
+  - Simulates an FTP server on port 21
+  - Captures credentials (`USER` / `PASS`)
+  - Supports PASV, LIST, RETR, STOR with fake files
+- **Interactive Console**
+  - Start/stop each service independently
+  - View real-time logs
+  - Change HTML response without restarting
+- **Standalone Binary**
+  - Packaged via PyInstaller into `Freak`
+  - Run directly after setting executable permissions
 
-View logs
+---
 
-Change served HTML file
+## 🚀 Quick Start
 
-Start/stop HTTP & FTP services independently
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/freak-pot.git
+   cd freak-pot
+   ```
+2. **Set permissions on the binary**
+   ```bash
+   chmod 777 Freak
+   ```
+3. **Run the honeypot**
+   ```bash
+   sudo ./Freak
+   ```
 
-Quick Start
+> _Root privileges are required to bind to ports 80 & 21._
 
-Clone the repo
+---
 
-git clone https://github.com/<your-username>/freak-pot.git
-cd freak-pot
+## 💻 Usage
 
-Set executable permissions on the binary
+At the interactive prompt, type `help` to view available commands:
 
-chmod 777 Freak
+| Command            | Description                           |
+|--------------------|---------------------------------------|
+| `start http`       | Start HTTP honeypot (port 80)         |
+| `http logs`        | Display HTTP request logs             |
+| `set html <file>`  | Change served HTML file               |
+| `start ftp`        | Start FTP honeypot (port 21)          |
+| `ftp logs`         | Display FTP activity logs             |
+| `exit`             | Stop all services and exit            |
+| `help`             | Show this help menu                   |
 
-Run the honeypot
+Logs are saved in the working directory:
+- `honeypot.log`    (HTTP)
+- `ftp_honeypot.log` (FTP)
 
-sudo ./Freak
+---
 
-Note: Root privileges are required to bind ports 80 & 21.
+## 🎨 Customization
 
-Console Commands
+- **HTML Response**: Place your custom `index.html` in the repo or use `set html <filename>` at runtime.
+- **Fake FTP Files**: Modify the `FAKE_FILES` list in the source before building.
 
-Once launched, use the interactive prompt:
+---
 
-[Freak] > help
-+----------------------+------------------------------------------+
-| Command              | Description                              |
-+----------------------+------------------------------------------+
-| start http           | Start HTTP honeypot (port 80)            |
-| http logs            | View HTTP log entries                    |
-| set html <file>      | Change HTML response file                |
-| start ftp            | Start FTP honeypot (port 21)             |
-| ftp logs             | View FTP log entries                     |
-| exit                 | Stop honeypots & exit                    |
-| help                 | Show this menu                           |
-+----------------------+------------------------------------------+
+## 🛠️ Building from Source
 
-http logs → prints honeypot.log
+```bash
+pip install pyinstaller
+pyinstaller --onefile Freak-Pot.py --name Freak
+```
 
-ftp logs  → prints ftp_honeypot.log
+Your new `Freak` executable will be in the `dist/` folder.
 
-Logs appear in the working directory.
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Add new protocol honeypots (SSH, SMTP, etc.)
+- Improve logging and analytics
+- Provide Docker or Kubernetes deployments
+
+Please open issues or pull requests on GitHub.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
