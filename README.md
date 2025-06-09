@@ -37,16 +37,14 @@ In this circus of chaos, only the bold survive—bring your curiosity, and let t
    ```bash
    git clone https://github.com/J0K3R-x-Anarchy/Freak-Pot.git
    cd freak-pot
-````
-
+   ```
 2. **Set permissions and run**
-
    ```bash
    chmod +x Freak
    sudo ./Freak
    ```
 
-> *Root privileges are required to bind to ports 21, 22, and 80.*
+> _Root privileges are required to bind to ports 21, 22, and 80._
 
 ---
 
@@ -55,7 +53,7 @@ In this circus of chaos, only the bold survive—bring your curiosity, and let t
 1. **Download `Freak.exe`** from the [Releases](https://github.com/J0K3R-x-Anarchy/Freak-Pot/releases)
 2. **Double-click** the `.exe` file to run the honeypot — no installation required
 
-> *Run as administrator to access system ports (80, 21, 22).*
+> _Run as administrator to access system ports (80, 21, 22)._
 
 ---
 
@@ -63,23 +61,21 @@ In this circus of chaos, only the bold survive—bring your curiosity, and let t
 
 At the interactive prompt, type `help` to view available commands:
 
-| Command           | Description                          |
-| ----------------- | ------------------------------------ |
-| `start http`      | Start HTTP honeypot (port 80)        |
-| `http logs`       | Display HTTP request logs            |
-| `set html <file>` | Change served HTML file              |
-| `start ftp`       | Start FTP honeypot (port 21)         |
-| `ftp logs`        | Display FTP activity logs            |
-| `start ssh`       | Start SSH honeypot (port 22)         |
-| `ssh logs`        | View SSH login attempts and commands |
-| `exit`            | Stop all services and exit           |
-| `help`            | Show this help menu                  |
+| Command             | Description                            |
+|---------------------|----------------------------------------|
+| `start http`        | Start HTTP honeypot (port 80)          |
+| `http logs`         | Display HTTP request logs              |
+| `set html <file>`   | Change served HTML file                |
+| `start ftp`         | Start FTP honeypot (port 21)           |
+| `ftp logs`          | Display FTP activity logs              |
+| `start ssh`         | Start SSH honeypot (port 22)           |
+| `ssh logs`          | View SSH login attempts and commands   |
+| `exit`              | Stop all services and exit             |
+| `help`              | Show this help menu                    |
 
 Logs are saved in the working directory:
-
-* `honeypot.log`       (HTTP)
-* `ftp_honeypot.log`   (FTP)
-* `ssh_honeypot.log`   (SSH)
+- `honeypot.log`       (HTTP)
+- `ftp_honeypot.log`   (FTP)
+- `ssh_honeypot.log`   (SSH)
 
 ---
-
