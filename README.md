@@ -497,16 +497,6 @@ No warranty - use at your own risk
 - **The Matrix** - For the falling code visual inspiration
 - **Security Community** - For honeypot research and techniques
 
----
-
-## 📞 Contact & Support
-
-- **Issues:** [GitHub Issues](https://github.com/yourusername/freak-pot/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/freak-pot/discussions)
-- **Email:** your.email@example.com
-- **Twitter:** [@YourHandle](https://twitter.com/yourhandle)
-
----
 
 ## 🎭 "Why so serious?"
 
