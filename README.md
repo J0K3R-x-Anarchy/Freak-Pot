@@ -499,14 +499,6 @@ Using Freak-Pot, we discovered:
 
 ---
 
-## ⭐ Star History
-
-If you find this project useful, please consider giving it a star!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/freak-pot&type=Date)](https://star-history.com/#yourusername/freak-pot&Date)
-
----
-
 <div align="center">
 
 ### *"Introduce a little anarchy. Upset the established order."*
