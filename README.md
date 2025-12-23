@@ -114,18 +114,8 @@ Every single action is logged with extreme detail:
 <p align="center"> <img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-50-59.png" width="800" alt="Freak-Pot Main Dashboard"/> </p> <p align="center"> <em>Matrix-themed control center showing total attacks, protocol distribution, and live monitoring.</em> </p>
 
 ### Live Attack Logs
-```
-[2024-12-21 14:30:45] [SSH] CREDENTIAL CAPTURED
-  Username: 'root' | Password: 'admin123' | IP: 192.168.1.100
 
-[2024-12-21 14:30:52] [SSH] COMMAND EXECUTED
-  User: root | Command: 'cat /etc/shadow'
-
-[2024-12-21 14:31:05] [SSH] MALWARE DOWNLOAD ATTEMPT
-  URL: 'http://malicious.com/backdoor.sh'
-```
-
----
+<p align="center"> <img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-58-56.png" width="800" alt="Live Attack Logs"/> </p> <p align="center"> <em>Real-time credential capture, command execution tracking, and malware download attempts.</em> </p>
 
 ## ⚙️ Configuration
 
