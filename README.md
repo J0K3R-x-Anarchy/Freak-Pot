@@ -110,16 +110,8 @@ Every single action is logged with extreme detail:
 ## 📸 Screenshots
 
 ### Main Dashboard
-```
-[Matrix rain falling in background]
-╔══════════════════════════════════════════╗
-║        FREAK-POT CONTROL CENTER          ║
-║   "Why so serious? Let's catch hackers!" ║
-╠══════════════════════════════════════════╣
-║  Total Attacks: 1,337  │  HTTP: 542     ║
-║  FTP: 483              │  SSH: 312      ║
-╚══════════════════════════════════════════╝
-```
+
+<p align="center"> <img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-50-59.png" width="800" alt="Freak-Pot Main Dashboard"/> </p> <p align="center"> <em>Matrix-themed control center showing total attacks, protocol distribution, and live monitoring.</em> </p>
 
 ### Live Attack Logs
 ```
