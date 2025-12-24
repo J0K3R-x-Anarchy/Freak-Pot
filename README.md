@@ -30,6 +30,7 @@ Because sometimes, you need to let the chaos in to understand it. This isn't a t
 - ✅ **Serves real files** - Upload bait files they'll steal
 - ✅ **Executes commands** - Watch what they try to do
 - ✅ **Logs EVERYTHING** - Ultra-verbose attack logs
+- ✅ **Secure Dashboard** - Password-protected web interface
 - ✅ **Looks awesome** - Animated green UI that would make Neo jealous
 
 ---
@@ -43,7 +44,7 @@ Because sometimes, you need to let the chaos in to understand it. This isn't a t
 # Download the executable
 freak-pot.exe
 
-# Double-click or run from terminal
+# Run from terminal
 .\freak-pot.exe
 ```
 
@@ -59,11 +60,36 @@ chmod +x freak-pot-linux
 ./freak-pot-linux
 ```
 
-**That's it!** Open your browser to `http://localhost:5000` and start catching hackers.
+**On first run, you'll be prompted to set credentials:**
+```bash
+============================================================
+🃏  FREAK-POT HONEYPOT SYSTEM  🃏
+============================================================
+
+Set up authentication credentials:
+Enter username: admin
+Enter password: ********
+
+============================================================
+✓ Authentication configured for user: admin
+✓ Starting web interface on http://localhost:5000
+✓ Why so serious? Let's catch some hackers!
+============================================================
+```
+
+**That's it!** Open your browser to `http://localhost:5000`, login with your credentials, and start catching hackers.
 
 ---
 
 ## ✨ Features
+
+### 🔐 Secure Dashboard Authentication
+- **Interactive Login** - Set username/password when starting
+- **Session Management** - Credentials valid until script stops
+- **Password Protection** - Hidden password input (not visible when typing)
+- **Themed Login Page** - Matrix-style login matching the main interface
+- **Logout Function** - Secure logout with session clearing
+- **Access Control** - All dashboard routes protected
 
 ### 🌐 HTTP Honeypot
 - **Custom HTML Pages** - Upload fake login pages (phpMyAdmin, WordPress, etc.)
@@ -92,6 +118,7 @@ chmod +x freak-pot-linux
 - **Real-Time Monitoring** - Live attack logs and statistics
 - **File Upload** - Upload bait files via web interface
 - **Easy Configuration** - Configure everything from the browser
+- **Secure Access** - Password-protected dashboard
 - **No Command Line** - Everything through beautiful web UI
 
 ### 🔍 Ultra-Verbose Logging
@@ -109,15 +136,57 @@ Every single action is logged with extreme detail:
 
 ## 📸 Screenshots
 
+### Login Page
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/yourusername/freak-pot/main/images/login-screenshot.png" width="800" alt="Freak-Pot Login Page"/>
+</p>
+<p align="center">
+<em>Secure Matrix-themed login page with password protection before accessing the dashboard.</em>
+</p>
+
 ### Main Dashboard
 
-<p align="center"> <img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-50-59.png" width="800" alt="Freak-Pot Main Dashboard"/> </p> <p align="center"> <em>Matrix-themed control center showing total attacks, protocol distribution, and live monitoring.</em> </p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-50-59.png" width="800" alt="Freak-Pot Main Dashboard"/>
+</p>
+<p align="center">
+<em>Matrix-themed control center showing total attacks, protocol distribution, and live monitoring.</em>
+</p>
 
 ### Live Attack Logs
 
-<p align="center"> <img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-58-56.png" width="800" alt="Live Attack Logs"/> </p> <p align="center"> <em>Real-time credential capture, command execution tracking, and malware download attempts.</em> </p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/J0K3R-x-Anarchy/Freak-Pot/main/images/Screenshot%20at%202025-12-23%2023-58-56.png" width="800" alt="Live Attack Logs"/>
+</p>
+<p align="center">
+<em>Real-time credential capture, command execution tracking, and malware download attempts.</em>
+</p>
+
+---
 
 ## ⚙️ Configuration
+
+### 🔐 Dashboard Authentication
+
+**Setting Credentials:**
+When you start Freak-Pot, you'll be prompted:
+```bash
+Set up authentication credentials:
+Enter username: your_username
+Enter password: (hidden - won't show when typing)
+```
+
+**Security Features:**
+- ✅ Password hidden during input (secure)
+- ✅ Session-based authentication
+- ✅ All routes protected with login requirement
+- ✅ Logout button in top-right corner
+- ✅ Credentials stored in memory only
+- ✅ Reset by restarting application
+
+**Logout:**
+Click the red "LOGOUT" button in the top-right corner of the dashboard to end your session.
 
 ### 🌐 HTTP Honeypot
 
@@ -346,14 +415,16 @@ grep "FILE READ SUCCESS" freakpot_logs.json | grep -oP "File: '\K[^']*" | sort |
 - ✅ Use fake data only
 - ✅ Review logs regularly
 - ✅ Have kill switch ready
+- ✅ Use strong dashboard credentials
 
 **DON'T:**
 - ❌ Run on production systems
-- ❌ Use real credentials
+- ❌ Use real credentials (dashboard or honeypots)
 - ❌ Expose sensitive networks
 - ❌ Trust uploaded content
 - ❌ Leave unmonitored
 - ❌ Violate local laws
+- ❌ Use weak passwords like "admin/admin"
 
 **Legal Considerations:**
 - Check local laws regarding honeypots
@@ -391,12 +462,14 @@ This tool is designed for:
 - `TESTING_GUIDE.md` - Test your honeypot
 - `HTTP_CONFIGURATION.md` - HTTP customization
 - `FEATURES.md` - Complete feature list
+- `AUTHENTICATION.md` - Dashboard security setup
 
 ### Architecture:
 ```
 Freak-Pot Architecture:
 ┌─────────────────────────────────────┐
 │     Web Interface (Flask)           │
+│  🔐 Password-Protected Dashboard    │
 │  Matrix-themed UI on port 5000      │
 └─────────────────┬───────────────────┘
                   │
@@ -429,6 +502,10 @@ pip install -r requirements.txt
 # Run directly
 python main.py
 
+# You'll be prompted for credentials:
+# Enter username: your_username
+# Enter password: (hidden)
+
 # Or build executable
 pip install pyinstaller
 pyinstaller --onefile --add-data "uploads:uploads" --add-data "ftp_files:ftp_files" --add-data "ssh_files:ssh_files" main.py
@@ -436,17 +513,8 @@ pyinstaller --onefile --add-data "uploads:uploads" --add-data "ftp_files:ftp_fil
 
 ---
 
-## 🤝 Contributing
 
-Contributions welcome! Here's how:
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-### Ideas for Contributions:
+### Future of Madness :
 - Additional protocol honeypots (Telnet, SMTP, MySQL, RDP)
 - Machine learning for attack classification
 - Geographic IP mapping visualization
@@ -456,6 +524,8 @@ Contributions welcome! Here's how:
 - Mobile app for monitoring
 - Docker containerization
 - Kubernetes deployment configs
+- Two-factor authentication for dashboard
+- Role-based access control
 
 ---
 
@@ -507,5 +577,7 @@ Using Freak-Pot, we discovered:
 
 
 *The joke's on them... we're watching everything.* 🃏
+
+**🔐 Now with secure dashboard authentication - because even chaos needs some order.**
 
 </div>
