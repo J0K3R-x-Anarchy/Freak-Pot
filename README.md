@@ -89,14 +89,6 @@ Enter password: ********
 - ✅ Works out of the box
 - ✅ Just download and run!
 
-**Building from source:**
-- Python 3.7+
-- Flask
-- Paramiko
-- See `requirements.txt` for full list
-
----
-
 ## ✨ Features
 
 ### 🔐 Secure Dashboard Authentication
@@ -488,35 +480,6 @@ Freak-Pot Architecture:
          freakpot_logs.json
 ```
 
----
-
-## 🔨 Building from Source
-
-**Prefer pre-built binaries?** Download them from [Google Drive](https://drive.google.com/drive/folders/1BG3KtWrLwqpDJd5Xi0ECF8pkeM38oZtX?usp=drive_link) instead!
-
-If you want to build yourself:
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/freak-pot.git
-cd freak-pot
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run directly
-python main.py
-
-# You'll be prompted for credentials:
-# Enter username: your_username
-# Enter password: (hidden)
-
-# Or build executable
-pip install pyinstaller
-pyinstaller --onefile --add-data "uploads:uploads" --add-data "ftp_files:ftp_files" --add-data "ssh_files:ssh_files" main.py
-```
-
----
 
 ### Future of Madness :
 - Additional protocol honeypots (Telnet, SMTP, MySQL, RDP)
