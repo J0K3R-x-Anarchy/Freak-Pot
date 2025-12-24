@@ -139,7 +139,7 @@ Every single action is logged with extreme detail:
 ### Login Page
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/yourusername/freak-pot/main/images/login-screenshot.png" width="800" alt="Freak-Pot Login Page"/>
+<img src="https://github.com/J0K3R-x-Anarchy/Freak-Pot/blob/main/images/Screenshot%20at%202025-12-24%2018-08-17.png" width="800" alt="Freak-Pot Login Page"/>
 </p>
 <p align="center">
 <em>Secure Matrix-themed login page with password protection before accessing the dashboard.</em>
