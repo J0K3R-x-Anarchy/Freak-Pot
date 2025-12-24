@@ -487,31 +487,6 @@ Freak-Pot Architecture:
 
 ---
 
-## 🔨 Building from Source
-
-If you want to build yourself instead of using pre-compiled binaries:
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/freak-pot.git
-cd freak-pot
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run directly
-python main.py
-
-# You'll be prompted for credentials:
-# Enter username: your_username
-# Enter password: (hidden)
-
-# Or build executable
-pip install pyinstaller
-pyinstaller --onefile --add-data "uploads:uploads" --add-data "ftp_files:ftp_files" --add-data "ssh_files:ssh_files" main.py
-```
-
----
 
 
 ### Future of Madness :
