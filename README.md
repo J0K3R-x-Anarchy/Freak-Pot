@@ -451,19 +451,6 @@ This tool is designed for:
 - Unauthorized monitoring
 
 ---
-
-## 📚 Documentation
-
-### Included Guides:
-- `QUICK_START.md` - Get running in 5 minutes
-- `FULLY_FUNCTIONAL_GUIDE.md` - Complete usage guide
-- `FILE_UPLOAD_GUIDE.md` - File upload and verbose logging
-- `FTP_TROUBLESHOOTING.md` - Fix FTP issues
-- `TESTING_GUIDE.md` - Test your honeypot
-- `HTTP_CONFIGURATION.md` - HTTP customization
-- `FEATURES.md` - Complete feature list
-- `AUTHENTICATION.md` - Dashboard security setup
-
 ### Architecture:
 ```
 Freak-Pot Architecture:
@@ -503,17 +490,6 @@ Freak-Pot Architecture:
 - Role-based access control
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License - Free to use, modify, and distribute
-Attribution appreciated but not required
-No warranty - use at your own risk
-```
-
 ---
 
 ## 🙏 Acknowledgments
