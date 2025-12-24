@@ -52,9 +52,9 @@ Because sometimes, you need to let the chaos in to understand it. This isn't a t
 
 #### Linux
 ```bash
-# 1. Download freak-pot-linux from Google Drive
+# 1. Download freak-pot_linux from Google Drive
 # 2. Make executable
-chmod +x freak-pot-linux
+chmod +x freak-pot_linux
 
 # 3. Run
 ./freak-pot-linux
