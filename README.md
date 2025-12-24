@@ -52,9 +52,9 @@ Because sometimes, you need to let the chaos in to understand it. This isn't a t
 
 #### Linux
 ```bash
-# 1. Download freak-pot_linux from Google Drive
+# 1. Download freak-pot-linux from Google Drive
 # 2. Make executable
-chmod +x freak-pot_linux
+chmod +x freak-pot-linux
 
 # 3. Run
 ./freak-pot-linux
@@ -155,7 +155,7 @@ Every single action is logged with extreme detail:
 ### Login Page
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/yourusername/freak-pot/main/images/login-screenshot.png" width="800" alt="Freak-Pot Login Page"/>
+<img src="https://github.com/J0K3R-x-Anarchy/Freak-Pot/blob/main/images/Screenshot%20at%202025-12-24%2018-08-17.png" width="800" alt="Freak-Pot Login Page"/>
 </p>
 <p align="center">
 <em>Secure Matrix-themed login page with password protection before accessing the dashboard.</em>
@@ -467,19 +467,6 @@ This tool is designed for:
 - Unauthorized monitoring
 
 ---
-
-## 📚 Documentation
-
-### Included Guides:
-- `QUICK_START.md` - Get running in 5 minutes
-- `FULLY_FUNCTIONAL_GUIDE.md` - Complete usage guide
-- `FILE_UPLOAD_GUIDE.md` - File upload and verbose logging
-- `FTP_TROUBLESHOOTING.md` - Fix FTP issues
-- `TESTING_GUIDE.md` - Test your honeypot
-- `HTTP_CONFIGURATION.md` - HTTP customization
-- `FEATURES.md` - Complete feature list
-- `AUTHENTICATION.md` - Dashboard security setup
-
 ### Architecture:
 ```
 Freak-Pot Architecture:
@@ -531,17 +518,7 @@ pyinstaller --onefile --add-data "uploads:uploads" --add-data "ftp_files:ftp_fil
 
 ---
 
-## 🤝 Contributing
-
-Contributions welcome! Here's how:
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-### Ideas for Contributions:
+### Future of Madness :
 - Additional protocol honeypots (Telnet, SMTP, MySQL, RDP)
 - Machine learning for attack classification
 - Geographic IP mapping visualization
@@ -555,17 +532,6 @@ Contributions welcome! Here's how:
 - Role-based access control
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License - Free to use, modify, and distribute
-Attribution appreciated but not required
-No warranty - use at your own risk
-```
-
 ---
 
 ## 🙏 Acknowledgments
